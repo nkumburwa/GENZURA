@@ -1,141 +1,195 @@
-![snipe-it-by-grok](https://github.com/grokability/snipe-it/assets/197404/b515673b-c7c8-4d9a-80f5-9fa58829a602)
-
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/snipe-it/localized.svg)](https://crowdin.com/project/snipe-it) [![Docker Pulls](https://img.shields.io/docker/pulls/snipe/snipe-it.svg)](https://hub.docker.com/r/snipe/snipe-it/) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/553ce52037fc43ea99149785afcfe641)](https://app.codacy.com/gh/snipe/snipe-it/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Tests](https://github.com/grokability/snipe-it/actions/workflows/tests.yml/badge.svg)](https://github.com/grokability/snipe-it/actions/workflows/tests.yml)
-[![All Contributors](https://img.shields.io/badge/all_contributors-331-orange.svg?style=flat-square)](#contributing) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/yZFtShAcKk)
-
-## Snipe-IT - Open Source Asset Management System
-
-This is a FOSS project for asset management in IT Operations. Knowing who has which laptop, when it was purchased in order to depreciate it correctly, handling software licenses, etc.
-
-It is built on [Laravel 11](http://laravel.com).
-
-Snipe-IT is actively developed and we [release quite frequently](https://github.com/grokability/snipe-it/releases). ([Check out the live demo here](https://snipeitapp.com/demo/).)
-
-> [!TIP]
-> __This is web-based software__. This means there is no executable file (aka no .exe files), and it must be run on a web server and accessed through a web browser. It runs on any Mac OSX, any flavor of Linux, as well as Windows, and we have a [Docker image](https://snipe-it.readme.io/docs/docker) available if that's what you're into.
-
------
-
-### Table of Contents
-* [Installation](#installation)
-* [User's Manual](#users-manual)
-* [Bug Reports & Feature Requests](#bug-reports--feature-requests)
-* [Security](#security)
-* [Upgrading](#upgrading)
-* [Translations!](#translations-)
-* [Libraries, Modules & Related Projects](#libraries-modules--related-projects)
-* [Join the Community!](#join-the-community)
-* [Contributing](#contributing)
-* [Announcement List](#announcement-list)
-
-
------
-
-### Installation
-
-For instructions on installing and configuring Snipe-IT on your server, check out the [installation manual](https://snipe-it.readme.io/docs). (Please see the [requirements documentation](https://snipe-it.readme.io/docs/requirements) for full requirements.)
-
-If you're having trouble with the installation, please check the [Common Issues](https://snipe-it.readme.io/docs/common-issues) and [Getting Help](https://snipe-it.readme.io/docs/getting-help) documentation, and search this repository's open *and* closed issues for help.
-
------
-### User's Manual
-For help using Snipe-IT, check out the [user's manual](https://snipe-it.readme.io/docs/overview).
-
------
-### Bug Reports & Feature Requests
-
-Feel free to check out the [GitHub Issues for this project](https://github.com/grokability/snipe-it/issues) to open a bug report or see what open issues you can help with. Please search through existing issues (open *and* closed) to see if your question has already been answered before opening a new issue.
-
-> [!IMPORTANT]  
-> **PLEASE see the [Getting Help Guidelines](https://snipe-it.readme.io/docs/getting-help) and [Common Issues](https://snipe-it.readme.io/docs/common-issues) before opening a ticket, and be sure to complete all of the questions in the Github Issue template to help us to help you as quickly as possible.**
-
------
-
-### Security
-
-> [!IMPORTANT]
-> **To report a security vulnerability, please email security@snipeitapp.com instead of using the issue tracker.**
------
-
-
-### Upgrading
-
-Please see the [upgrading documentation](https://snipe-it.readme.io/docs/upgrading) for instructions on upgrading Snipe-IT.
-
-------
-### Translations!
-
-Please see the [translations documentation](https://snipe-it.readme.io/docs/translations) for information about available languages and how to add translations to Snipe-IT.
-
------
-
-### Libraries, Modules & Related Projects
-
-Since the release of the JSON REST API, several third-party developers have been developing modules and libraries to work with Snipe-IT.  
-
-> [!NOTE]  
-> As these were created by third-parties, Snipe-IT cannot provide support for these project, and you should contact the developers directly if you need assistance. Additionally, Snipe-IT makes no guarantees as to the reliability, accuracy or maintainability of these libraries. Use at your own risk. :)
-
-#### Libraries & Modules
-
-- [SnipeSharp - .NET module in C#](https://github.com/barrycarey/SnipeSharp) by [@barrycarey](https://github.com/barrycarey)
-- [SnipeitPS](https://github.com/snazy2000/SnipeitPS) by [@snazy2000](https://github.com/snazy2000) - Powershell API Wrapper for Snipe-it
-- [jamf2snipe](https://github.com/grokability/jamf2snipe) - Python script to sync assets between a JAMFPro instance and a Snipe-IT instance
-- [jamf-snipe-rename](https://macblog.org/jamf-snipe-rename/) - Python script to rename computers in Jamf from Snipe-IT
-- [Snipe-IT plugin for Jira Service Desk](https://marketplace.atlassian.com/apps/1220964/snipe-it-for-jira)
-- [Python 3 CSV importer](https://github.com/gastamper/snipeit-csvimporter) - allows importing assets into Snipe-IT based on Item Name rather than Asset Tag.
-- [Snipe-IT Kubernetes Helm Chart](https://github.com/t3n/helm-charts/tree/master/snipeit) - For more information, [click here](https://hub.helm.sh/charts/t3n/snipeit).
-- [Snipe-IT Bulk Edit](https://github.com/bricelabelle/snipe-it-bulkedit) - Google Script files to use Google Sheets as a bulk checkout/checkin/edit tool for Snipe-IT.
-- [MosyleSnipeSync](https://github.com/RodneyLeeBrands/MosyleSnipeSync) by [@Karpadiem](https://github.com/Karpadiem) - Python script to synchronize information between Mosyle and Snipe-IT.
-- [WWW::SnipeIT](https://github.com/SEDC/perl-www-snipeit) by [@SEDC](https://github.com/SEDC) - perl module for accessing the API
-- [UniFi to Snipe-IT](https://www.edtechirl.com/p/snipe-it-and-azure-asset-management) originally by [@karpadiem](https://github.com/karpadiem) - Python script that synchronizes UniFi devices with Snipe-IT.
-- [Kandji2Snipe](https://github.com/grokability/kandji2snipe) by [@briangoldstein](https://github.com/briangoldstein) - Python script that synchronizes Kandji with Snipe-IT.
-- [SnipeAgent](https://github.com/ReticentRobot/SnipeAgent) by [@ReticentRobot](https://github.com/ReticentRobot) - Windows agent for Snipe-IT.
-- [Gate Pass Generator](https://github.com/cha7uraAE/snipe-it-gate-pass-system) by [@cha7uraAE](https://github.com/cha7uraAE) - A Streamlit application for generating gate passes based on hardware data from a Snipe-IT API.
-- [InQRy (archived)](https://github.com/Microsoft/InQRy) by [@Microsoft](https://github.com/Microsoft)
-- [Marksman (archived)](https://github.com/Scope-IT/marksman) - A Windows agent for Snipe-IT
-- [Python Module (archived)](https://github.com/jbloomer/SnipeIT-PythonAPI) by [@jbloomer](https://github.com/jbloomer)
-
-We also have a handful of [Google Apps scripts](https://github.com/grokability/google-apps-scripts-for-snipe-it) to help with various tasks.
-
-#### Mobile Apps
-
-We're currently working on our own mobile app, but in the meantime, check out these third-party apps that work with Snipe-IT:
-
-- [SnipeMate](https://snipemate.app/) (iOS, Google Play, Huawei AppGallery) by Mars Technology
-- [Snipe-Scan](https://apps.apple.com/do/app/snipe-scan/id6744179400?uo=2) (iOS) by Nicolas Maton
-- [Snipe-IT Assets Management](https://play.google.com/store/apps/details?id=com.diegogarciadev.assetsmanager.snipeit&hl=en&pli=1) (Google Play) by DiegoGarciaDEV
-- [AssetX](https://apps.apple.com/my/app/assetx-for-snipe-it/id6741996196?uo=2) (iOS) for Snipe-IT by Rishi Gupta
-
------
-
-### Join the Community!
-
-- **[Join our Discord](https://discord.gg/yZFtShAcKk)!** It’s full of great people. We even wrote about it [here](https://grokstar.dev/culture/2024/06/the-unlikely-rise-of-discord-as-a-support-channel/)!
-- **Follow us on Bluesky** at [@snipeitapp.com](https://bsky.app/profile/snipeitapp.com)
-- **Follow us on Mastodon** at [hachyderm.io/@grokability](https://hachyderm.io/@grokability)
-- **Follow our blog** at [Grokstar.Dev](https://grokstar.dev)
-- **Subscribe here** on Github for notifications about new releases. (We recommend selecting "Releases" only for most users - this repo can get noisy.)
-
------
-
-### Contributing
-
-**Please refrain from submitting issues or pull requests generated by fully-automated tools. Maintainers reserve the right, at their sole discretion, to close such submissions and to block any account responsible for them.** 
-
-Contributions should follow from a human-to-human discussion in the form of an issue for the best chances of being merged into the core project. (Sometimes we might already be working on that feature, sometimes we've decided against )
-
-Please see the complete documentation on [contributing and developing for Snipe-IT](https://snipe-it.readme.io/docs/contributing-overview).
-
-This project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
-
-The ERD is available [online here](https://drawsql.app/templates/snipe-it).
-
-Be sure to check out all of the [amazing people](CONTRIBUTORS.md) that have contributed to Snipe-IT over the years!
-
-------
-### Announcement List
-
-To be notified of important news (such as new releases, security advisories, etc), [sign up for our list](http://eepurl.com/XyZKz). We'll never sell or give away your info, and we'll only email you when it's important.
-
-
+1.1 Background of the Study  
+In many institutions, both public and private, managing assets and consumables remains a 
+persistent challenge. A common issue is the absence of a clear system to track the availability, 
+usage, condition, or loss of items. This lack of proper management often leads to confusion, poor 
+decision-making, and inefficient use of resources. 
+Key organizational assets—such as laptops, desktops, printers, projectors, and smart screens—
+ are valuable and essential for daily operations. However, without a reliable tracking mechanism, 
+it is difficult to monitor who is using what, when it was taken, or whether it is still functional. 
+This can result in misplaced or damaged property, especially when employees are not held 
+accountable for the items in their possession. 
+Consumables, including markers, soap, water, and detergents, are also prone to mismanagement. 
+These items are used frequently but may run out unnoticed due to the lack of a tracking system. 
+This problem is critical in institutions like schools, offices, and hospitals, which depend on these 
+consumables for smooth operation. 
+Additionally, poor communication and lack of visibility into available resources mean that some 
+items may remain unused, while others are unnecessarily reordered—leading to waste and 
+overspending. These issues highlight the need for transparency and proper auditing of 
+organizational property. 
+To address these challenges, we propose a web-based system designed to manage and track both 
+assets and consumables in real time. The system will display item availability, usage status 
+(working, damaged, or in use), and allow users to make requests. It will also generate reports to 
+support better management and decision-making. 
+This solution will enhance accountability, simplify audits, prevent misuse, and improve resource 
+transparency. Ultimately, it offers a modern and efficient approach to managing organizational 
+assets and consumables, leading to reduced waste, cost savings, and increased productivity. 
+1.2 Statement of the Problem 
+In today’s public institutions and large organizations, poor tracking and management of assets 
+and consumables has become a major issue. Laptops, projectors, and printers are often lost, 
+misused, or unaccounted for due to the absence of proper record-keeping. Consumables like 
+water, soap, and cleaning supplies are wasted or expire unnoticed, resulting in unnecessary 
+expenses and low productivity. The core of the problem lies in the lack of a centralized, 
+transparent system that can provide real-time data on what resources are available, who is using 
+them, and where they are located. 
+1 
+This leads to confusion, resource duplication, inefficient service delivery, and ultimately poor 
+decision-making. Moreover, it makes audits unreliable and opens the door to fraud or hidden 
+information. If this challenge remains unresolved, organizations will continue to face increased 
+costs, poor accountability, and weakened performance. More importantly, it will hinder national 
+development efforts aligned with Rwanda’s Vision 2050, NST1, and global goals like the SDGs 
+and AU Agenda 2063. 
+To address this, there is a critical need for a web-based system that enables real-time asset and 
+consumable management. Such a solution would promote transparency, prevent misuse, reduce 
+waste, and empower managers to make informed decisions for better organizational outcomes. 
+1.3 Research Objectives 
+General Objective: 
+The main purpose of this research is to develop a web-based system that enables organizations to 
+efficiently manage, track, and monitor their assets and consumables. This system will improve 
+transparency, accountability, and decision-making by providing real-time data on available 
+resources, their usage, and maintenance status. 
+Specific Objectives: 
+1. Develop a user-friendly web application 
+o Create a responsive system using Laravel and MySQL that allows users to log in, 
+check item availability, and request resources easily. 
+2. Implement a centralized database 
+o Store detailed information about all assets and consumables, including their 
+condition, usage history, and current status, to support accurate tracking and 
+updates. 
+3. Enable automated auditing and reporting 
+o Integrate features that generate real-time reports on resource usage, maintenance 
+needs, and locations to support better decision-making and accountability. 
+4. Minimize waste and resource mismanagement 
+o Provide real-time visibility of inventory so users can access what they need 
+without unnecessary delays or repeat purchases. 
+5. Improve security and responsibility tracking 
+o Use a check-in/check-out system with notifications to ensure each resource is 
+accounted for, reducing loss and promoting responsible usage. 
+This system offers a powerful, efficient, and modern solution to long-standing challenges in 
+organizational resource management. 
+2 
+1.4 Research Questions 
+To guide the study and investigate the problem, the following research questions will be 
+addressed: 
+1. How can a web-based system improve the management and tracking of assets and 
+consumables in organizations? 
+2. What challenges do organizations face when tracking assets and consumables manually, 
+and how can these be solved using an automated system? 
+3. How can real-time data tracking help improve accountability and reduce resource 
+mismanagement in an organization? 
+4. What is the impact of implementing a web-based tracking system on reducing wastage 
+and improving the efficiency of resource usage? 
+5. How will the integration of auditing and reporting features enhance decision-making and 
+transparency in resource management? 
+1.5 Significance/Importance/Contribution 
+This research is significant in both academic and practical terms: 
+ Academic Contribution: It will add to the body of knowledge on digital solutions for 
+resource management, focusing on the use of web-based systems in organizations. The 
+study will explore the benefits and challenges of implementing such systems, which 
+could be beneficial for future research in technology, management systems, and 
+organizational efficiency. 
+ Practical Contribution: The proposed system will have a direct positive impact on 
+organizations by providing an efficient tool for managing and tracking resources. It will 
+help institutions avoid resource wastage, reduce the risk of asset loss or misuse, and 
+improve overall productivity. Furthermore, the system will contribute to transparent 
+auditing and data-driven decision-making, helping institutions better allocate resources 
+and manage inventory. 
+This project also aligns with technological and socio-economic goals, as it supports better use of 
+resources in institutions, which is a key driver of growth and sustainability. 
+1.6 Scope 
+The scope of this Study covers: 
+ Content: The study will focus on developing a web-based application for asset and 
+consumable management, including features for tracking, reporting, and auditing 
+resources. 
+3 
+ Depth of Investigation: The research will explore the technical aspects of designing and 
+developing the system, as well as its effectiveness in improving resource management in 
+an organization. 
+ Sample Size: The system will be tested on a small-scale sample of users within one or 
+two institutions to ensure it meets user needs before a wider rollout. 
+ Geographical Coverage: The research will be applicable to organizations in Rwanda, 
+with potential for broader use in other regions. 
+ Time Frame: The project is expected to be completed within the academic year, with 
+development and testing phases scheduled within the first six months and final 
+implementation and reporting in the last six months. 
+ Theoretical Coverage: The research will draw from principles of resource management, 
+inventory control, and web application development, focusing on practical solutions for 
+real-world challenges. 
+CHAPTER TWO: LITERATURE REVIEW 
+2.1 Introduction to Asset and Consumable Management 
+The management of organizational assets and consumables is essential for effective resource 
+allocation and operational efficiency. Organizations often struggle with manual tracking, leading 
+to mismanagement, misuse, and wastage of resources. Effective tracking systems are key to 
+improving accountability, resource utilization, and cost reduction. This section reviews existing 
+literature on asset and consumable management systems, highlighting the advantages of using 
+digital tools for real-time tracking, reporting, and auditing. 
+2.2 Traditional Methods of Resource Management 
+Many organizations, especially public institutions and small companies, still rely on manual or 
+outdated systems to manage their assets and consumables. These methods involve paper-based 
+inventories, spreadsheets, or simple software that lacks real-time updates. According to Smith 
+(2018), manual tracking is prone to errors, inefficiencies, and delays in decision-making. The 
+absence of real-time data limits managers’ ability to monitor resource usage accurately, resulting 
+in waste, unaccounted resources, and loss (Jones & Martin, 2020). 
+ Gap Identified: Traditional systems do not provide transparency or accountability, 
+making it difficult to trace resource usage, and there is a lack of systems that integrate 
+tracking, auditing, and reporting. 
+2.3 Web-based Systems for Asset and Consumable Tracking 
+Web-based systems have emerged as a solution for improving asset and consumable 
+management in organizations. These systems allow real-time tracking, updating, and reporting, 
+making resource management more efficient. As noted by Lee et al. (2019), web-based systems 
+offer centralized access to asset information, enabling better resource planning, usage 
+monitoring, and timely maintenance. For example, systems like Asset Panda and Trackforce 
+4 
+have demonstrated improvements in reducing resource wastage and increasing accountability 
+(Doe, 2021). 
+ Gap Identified: While these systems exist, there is limited research on the specific needs 
+of organizations in Rwanda, and the local context must be considered when 
+implementing such systems. 
+2.4 Benefits of Real-time Tracking and Auditing Systems 
+Real-time tracking and auditing features play a crucial role in enhancing accountability and 
+minimizing fraud. According to Kumar & Singh (2020), a key advantage of web-based systems 
+is the ability to track resource usage in real time. This functionality ensures that employees are 
+aware of available resources, and managers can easily identify who is using what, and when. 
+Such systems also streamline the auditing process, making it easier to generate reports on the 
+status, condition, and location of resources, as discussed by Zhang & Liu (2018). 
+ Gap Identified: Existing literature primarily focuses on the technical benefits of these 
+systems, but there is limited discussion on the human factors (user behavior, training) that 
+affect the successful implementation of asset tracking systems. 
+2.5 System Design and Usability Considerations 
+The design and usability of asset tracking systems are vital for user adoption and success. A 
+study by O'Connor (2022) emphasizes that an intuitive, user-friendly interface can significantly 
+improve user engagement and reduce errors. System design should prioritize simplicity, making 
+it accessible to users with varying levels of technical expertise. Additionally, mobile 
+compatibility is increasingly important, as it allows staff to access the system from anywhere 
+within the organization (Roberts, 2019). 
+ Gap Identified: While there are various asset tracking systems available, few offer 
+comprehensive systems that include mobile access, a straightforward user interface, and 
+customized features for different types of organizations, particularly those in developing 
+countries. 
+2.6 Challenges in Implementing Asset Management Systems 
+The implementation of web-based asset management systems is not without challenges. 
+According to Martin & Walker (2020), common barriers include high initial costs, resistance to 
+change from employees, and the complexity of integrating with existing systems. In Rwanda and 
+similar regions, internet connectivity issues and lack of local expertise can also pose significant 
+challenges. Despite these obstacles, the long-term benefits of efficient asset management 
+outweigh the challenges (Benson & Lister, 2019). 
+5 
+ Gap Identified: There is a lack of research on overcoming these specific implementation 
+challenges in Rwanda, and there is a need for solutions tailored to the local infrastructure 
+and organizational needs. 
+2.7 The Need for a Comprehensive Resource Management System in Rwanda 
+In the context of Rwanda, there is limited literature on the development of local solutions for 
+resource management in organizations. As Rwanda’s economy grows, there is a rising need for 
+more efficient, transparent management of organizational resources. With the rise of the digital 
+economy, organizations are increasingly looking for ways to leverage technology to improve 
+resource management, reduce waste, and enhance accountability. This project aims to fill this 
+gap by developing a web-based system specifically designed for Rwandan organizations. 
+ Gap Identified: Local solutions for asset and consumable management in Rwanda are 
+scarce, and existing systems do not fully address the needs of Rwandan institutions and 
+businesses. 
+2.8 Conclusion 
+This literature review highlights the challenges faced by organizations in managing assets and 
+consumables, particularly in manual systems. It also identifies the potential of web-based 
+systems to provide real-time tracking, auditing, and reporting, improving accountability and 
+resource management. However, gaps in the local application of such systems in Rwanda need to 
+be addressed, and this research aims to fill that gap by developing a tailored web-based solution 
+that will meet the specific needs of local institutions.
